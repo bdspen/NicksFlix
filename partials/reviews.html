@@ -1,6 +1,6 @@
 <div class="col-xs-3">
   <ul>
-    <li ng-repeat="item in reviews">
+    <li ng-repeat="item in ReviewsFactory.reviews">
       <a ui-sref="item({ reviewId: item.id })">{{ item.title }}</a>
     </li>
   </ul>

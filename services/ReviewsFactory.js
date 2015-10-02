@@ -3,6 +3,7 @@ nicksFlix.factory('ReviewsFactory', function ReviewsFactory() {
   factory.reviews = [];
 
   factory.addReview = function() {
+    console.log(factory.reviews);
 
     factory.reviews.push({ input: factory.userReview, title: factory.userTitle,
       id: factory.reviews.length + 1});

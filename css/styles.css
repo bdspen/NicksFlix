@@ -5,3 +5,6 @@ margin: 0 auto;
 li{
   list-style: none;
 }
+.night-mode {
+  filter: invert(75%);
+}
