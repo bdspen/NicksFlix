@@ -6,7 +6,8 @@ nicksFlix.config(function($stateProvider, $urlRouterProvider){
     templateUrl: "partials/home.html"
   });
   $stateProvider.state('reviews',{
-    url:"/reviews",
-    templateUrl: "partials/reviews.html"
+    url:"/:reviewsId",
+    templateUrl: "partials/reviews.html",
+    controller: "ReviewsCtrl"
   });
 });
