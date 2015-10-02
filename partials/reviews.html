@@ -5,8 +5,15 @@
     </li>
   </ul>
 </div>
-<div class="col-xs-9">
-
+<div class="col-xs-6">
+  <h3>Create New Movie Review</h3>
+  <form ng-submit="ReviewsFactory.addReview()" role="form">
+    <div class="form-group">
+      <input class="form-control" ng-model="ReviewsFactory.userTitle" placeholder="Review Title">
+      <textarea class="form-control" rows="5" ng-model="ReviewsFactory.userReview" placeholder="Review"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </div>
 
 <!--
