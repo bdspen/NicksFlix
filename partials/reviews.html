@@ -7,10 +7,10 @@
 </div>
 <div class="col-xs-6">
   <h3>Create New Movie Review</h3>
-  <form ng-submit="ReviewsFactory.addReview()" role="form">
+  <form ng-submit="addReview()" role="form">
     <div class="form-group">
-      <input class="form-control" ng-model="ReviewsFactory.userTitle" placeholder="Review Title">
-      <textarea class="form-control" rows="5" ng-model="ReviewsFactory.userReview" placeholder="Review"></textarea>
+      <input class="form-control" ng-model="userTitle" placeholder="Review Title">
+      <textarea class="form-control" rows="5" ng-model="userReview" placeholder="Review"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
