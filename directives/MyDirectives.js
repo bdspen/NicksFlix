@@ -1,7 +1,7 @@
-nicksFlix.directive("nightMode", function() {
-  return function(scope, element, attrs) {
+nicksFlix.directive("toggleBodyClass", function($document) {
+  return function (scope, element, attrs) {
     element.bind("click", function() {
-      element.toggleClass(attrs.changeClass);
+      $document.find("body").toggleClass(attrs.toggleBodyClass);
     });
   }
 });
